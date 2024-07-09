@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            animation-name: circle;
+            background-color: blue;
+            /* border-radius: 50px; */
+            animation-duration: 3s;
+            width: 100px;
+            height: 100px;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 10;
+        }
+        @keyframes circle{
+            10%{
+                background-color: green;
+                width: 300px;
+                height: 300px;
+            }
+            50%{
+                background-color: pink;
+                width: 300px;
+                height: 300px;
+            }
+            100%{
+                background-color: gray;
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

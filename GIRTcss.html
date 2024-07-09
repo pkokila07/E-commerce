@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: aquamarine;
+        } */
+         .para{
+            display:grid;
+            /* grid-template-columns: minmax(170.1fr) 1fr 1fr; */
+        }
+         .outer{
+            display: grid;
+            grid-template-columns:repeat(4,.1fr);
+            grid-template-rows: 100px 100px 100px;
+            /* gap:20px;  */
+             grid-auto-rows:200px; 
+        } 
+         .box{
+            color:black; 
+            background-color: aqua;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size:5rm; 
+        }   
+            .box1{
+            grid-column: span 4;
+            background-color:blueviolet;
+        }  
+         .box2{
+            grid-row: span 2;
+            background-color: orangered; 
+            /* grid-column: span 3;
+            background-color: orange; */
+        } 
+        .box3{
+            grid-column: span  2;
+            background-color: green;
+            grid-row: span 2;
+            background-color: green; 
+        }
+         .box4{
+            grid-row: span 2;
+            background-color: yellow;
+        }
+         .box5{
+             grid-column: span 4;
+            background-color: blueviolet;
+    } 
+</style>
+</head>
+<body>
+    <div class="para">
+        <div class="outer">
+            <div class="box box1">Header</H1></div>
+            <div class="box box2">Left sidebar</div>
+            <div class="box box3">Main cantent</div>
+            <div class="box box4">Right sidebar</div>
+            <div class="box box5">fooder</div>
+            <!-- <div class="box box6">6</div>
+            <div class="box box7">7</div>
+            <div class="box box8">8</div>
+            <div class="box box9">9</div>
+            <div class="box box10">10</div>
+            <div class="box box11">11</div> -->
+            <!-- <div class="box box1">6</div>
+            <div class="box box2">7</div>
+            <div class="box box3">8</div> -->
+            <!-- <div class="box box4">9</div>
+            <div class="box box5">10</div>
+            <div class="box box1">11</div>
+            <div class="box box2">12</div>
+            <div class="box box3">13</div>
+            <div class="box box4">14</div>
+            <div class="box box5">15</div>  -->
+        </div>
+    </div>
+</body>
+</html>
